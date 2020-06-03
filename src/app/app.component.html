@@ -1,0 +1,24 @@
+<div class="container-fluid py-4">
+
+  <h1 class="text-center bg-light text-info">{{title}}</h1>
+  
+  <div class="container pb-4">
+
+    <nav class="bg-info ">
+
+    <ul class="nav nav-tabs nav-justified">
+      <li class="nav-item ">
+        <a class="nav-link text-white active" routerLink='/home' routerLinkActive="active">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white " [routerLink]="['/planets']" routerLinkActive="active">Planets</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white " routerLink='/fev' routerLinkActive="active">Fev-Planets</a>
+      </li>
+    </ul>
+    </nav>
+
+  </div>
+  <router-outlet></router-outlet>
+</div>
